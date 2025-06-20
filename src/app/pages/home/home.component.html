@@ -1,0 +1,14 @@
+<div class="home__container">
+  <app-card
+    *ngFor="let poke of pokemonList"
+    [pokeIndex]="'# ' + poke.pokeIndex"
+    [pokeImage]="poke.sprites.other['official-artwork'].front_default"
+    [pokeName]="poke.name"
+    [pokeType]="poke.typeNames"
+    [pokeAbilities]="poke.abilityNames"
+  ></app-card>
+</div>
+
+<div class="home-button__VisualizarMais">
+  <button class="home__button" (click)="loadPokemon()">Visualizar Mais</button>
+</div>

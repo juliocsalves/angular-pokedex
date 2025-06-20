@@ -1,0 +1,60 @@
+.card-title__container {
+	width: 100%;
+	height: 7re     m;
+	background-color: #1a1a1a;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	z-index: 999;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+
+
+}
+
+.card-title__container>h1 {
+	font-size: 3.5rem;
+	letter-spacing: 0.5rem;
+	font-family: 'Pokemon';
+	color: #FFCB05;
+	text-shadow: 2px 2px 0 #3B4CCA;
+	padding-bottom: 1.3rem;
+}
+
+/* Celulares pequenos (até 320px de largura) */
+@media (max-width: 320px) {
+  .card-title__container > h1 {
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    padding-bottom: 0.8rem;
+  }
+}
+
+/* Celulares médios (321px até 480px) */
+@media (min-width: 321px) and (max-width: 480px) {
+  .card-title__container > h1 {
+    font-size: 2.5rem;
+    letter-spacing: 0.3rem;
+    padding-bottom: 1rem;
+  }
+}
+
+/* Celulares grandes / tablets (481px até 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+  .card-title__container > h1 {
+    font-size: 3rem;
+    letter-spacing: 0.4rem;
+    padding-bottom: 1.1rem;
+  }
+}
+
+/* Tablets (768px até 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .card-title__container > h1 {
+    font-size: 3.2rem;
+    letter-spacing: 0.45rem;
+    padding-bottom: 1.2rem;
+  }
+}

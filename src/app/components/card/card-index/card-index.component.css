@@ -1,0 +1,19 @@
+.card-index__container {
+	position: absolute;
+	right: 0;
+	top: 10px;
+	right: 10px;
+}
+
+.card-index__content {
+	color: black;
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, 0.39);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 16px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: bold;
+	padding: 0.15rem 1.2rem;
+}

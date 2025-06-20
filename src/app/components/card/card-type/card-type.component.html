@@ -1,0 +1,11 @@
+<div class="card-type__container">
+  <div class="card-type__content">
+    <div
+      class="card-type__badge"
+      *ngFor="let type of pokeType"
+      [ngStyle]="{ border: '0.3rem solid ' + getBorderColor(type) }"
+    >
+      {{ type }}
+    </div>
+  </div>
+</div>

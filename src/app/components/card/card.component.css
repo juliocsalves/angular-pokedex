@@ -1,0 +1,55 @@
+.card__container {
+  position: relative;
+  border: 5px solid white;
+  border-radius: 10px;
+  width: 350px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: hidden;
+  margin-top: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+  margin: auto;
+  text-decoration: none;
+  color: inherit;
+}
+
+.card__img {
+  min-width: 100%;
+  transition: transform 0.8s;
+}
+
+.card__img:hover {
+  transform: scale(1.1);
+}
+
+.card-component__type {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.card-component__abilities {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  background-color: 2px solid rgba(255, 255, 255, 0.15);
+  border-top: 0;
+  opacity: 0;                  /* começa invisível */
+  pointer-events: none;        /* não interage */
+  transform: translateY(100%); /* começa fora do card, embaixo */
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  z-index: 10;
+  border-radius: 10px;
+}
+
+.card-component__abilities.show {
+  opacity: 1;               /* fica visível */
+  pointer-events: all;      /* interage normalmente */
+  transform: translateY(0); /* sobe para posição normal */
+}

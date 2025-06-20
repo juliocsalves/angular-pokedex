@@ -1,0 +1,23 @@
+.card-name__container {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 20%;;
+	border: 1px solid white;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0.5rem;
+	z-index: 999;
+}
+
+.card-name__container > p {
+	display: flex;
+	font-family: Pokemon;
+	font-size: 30px;
+	padding-bottom: auto;
+	padding-top: auto;
+	letter-spacing: 0.2rem;
+
+}

@@ -1,0 +1,49 @@
+.home__container {
+	width: 90%;
+	margin: 1rem auto;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 2rem;
+}
+
+.home__button {
+	height: 2.5rem;
+	width: 10rem;
+	border: 2px solid #2a75bb;
+	/* Azul Pokémon */
+	background-color: #ffcb05;
+	/* Amarelo Pikachu */
+	border-radius: 12px;
+	font-size: 18px;
+	font-weight: bold;
+	font-family: 'Pokemon Solid', sans-serif;
+	/* se estiver usando */
+	color: #2a75bb;
+	cursor: pointer;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	transition: all 0.3s ease-in-out;
+}
+
+.home__button:hover {
+	background-color: #2a75bb;
+	border-color: #ffcb05;
+	color: #ffcb05;
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.home-button__VisualizarMais {
+	width: 90%;
+	margin: 1rem auto;
+	margin-top: 2rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 2rem;
+}

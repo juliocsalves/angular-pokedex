@@ -1,0 +1,40 @@
+.card-abilities__container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 15000;
+	background-color: rgba(255, 255, 255, 0.55);
+	padding: 0.5rem;
+	border-radius: 5px;
+	margin-bottom: 1.5rem;
+}
+
+.card-abilities__list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	text-align: center;
+}
+
+.card-abilities__list li {
+  font-family: 'Pokemon', sans-serif;
+  font-size: 2.3rem;
+  font-weight: bold;
+  color: #2a4ba0;                              /* Azul escuro Pokémon */
+  text-shadow:
+    2px 2px 0 #000000bb,                       /* sombra preta translúcida */
+    -1px -1px 0 #ffffffaa;                     /* leve brilho branco invertido */
+  margin: 0.5rem 0;
+  letter-spacing: 0.3rem;
+}
+

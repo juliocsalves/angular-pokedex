@@ -1,0 +1,21 @@
+<a href="#" class="card__container" (click)="toggleAbilities($event)">
+	<app-card-index
+		[pokeIndex]="pokeIndex"
+	>
+	</app-card-index>
+
+	<img [src]="pokeImage" alt="Pikachu" class="card__img">
+
+	<div class="card-component__type">
+		<app-card-type [pokeType]="pokeType"></app-card-type>
+	</div>
+
+	<app-card-name [pokeName]="pokeName"></app-card-name>
+
+	<div class="card-component__abilities" [class.show]="showAbilities">
+		<app-card-abilities
+		[pokeAbilities]="pokeAbilities"
+		></app-card-abilities>
+
+	</div>
+</a>
