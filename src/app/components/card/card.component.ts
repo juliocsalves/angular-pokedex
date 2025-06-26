@@ -5,29 +5,28 @@ import { CardNameComponent } from "./card-name/card-name.component";
 import { CardAbilitiesComponent } from "./card-abilities/card-abilities.component";
 
 @Component({
-	selector: 'app-card',
-	standalone: true,
-	imports: [CardIndexComponent, CardTypeComponent, CardNameComponent, CardAbilitiesComponent],
-	templateUrl: './card.component.html',
-	styleUrls: ['./card.component.css']
+    selector: 'app-card',
+    standalone: true,
+    imports: [CardIndexComponent, CardTypeComponent, CardNameComponent, CardAbilitiesComponent],
+    templateUrl: './card.component.html',
+    styleUrls: ['./card.component.css']
 })
 export class CardComponent {
-	showAbilities = false;
+    @Input()
+    pokeImage: string = "";
+    @Input()
+    pokeAbilities: string = '';
+    @Input()
+    pokeIndex: string = '';
+    @Input()
+    pokeType: string[] = [];
+    @Input()
+    pokeName: string = '';
 
-	toggleAbilities(event: MouseEvent): void {
-		event.preventDefault(); // evita navegação do <a>
-		this.showAbilities = !this.showAbilities;
-	}
+    showAbilities = false;
 
-	@Input()
-	pokeImage: string = "";
-	@Input()
-	pokeAbilities: string = '';
-	@Input()
-	pokeIndex: string = '';
-	@Input()
-	pokeType: string[] = [];
-	@Input()
-	pokeName: string = '';
-
+    toggleAbilities(event: MouseEvent): void {
+        event.preventDefault(); // evita navegação do <a>
+        this.showAbilities = !this.showAbilities;
+    }
 }
