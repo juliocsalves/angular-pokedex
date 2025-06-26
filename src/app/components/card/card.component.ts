@@ -26,7 +26,6 @@ export class CardComponent {
     showAbilities = false;
 
     toggleAbilities(event: MouseEvent): void {
-        event.preventDefault(); // evita navegação do <a>
         this.showAbilities = !this.showAbilities;
     }
 }
