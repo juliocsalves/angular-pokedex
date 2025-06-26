@@ -25,7 +25,6 @@ export class HomeComponent implements OnInit {
 	loadPokemon(): void {
 		this.pokeApi.getPokemonList(this.offset, this.limit).subscribe({
 			next: (data: any[]) => {
-				// Mapeia pra adicionar os campos "typeNames" e "abilityNames" nos objetos pokemon
 				const mappedData = data.map(poke => ({
 					...poke,
 					pokeIndex: poke.id.toString().padStart(3, '0'),
@@ -34,7 +33,6 @@ export class HomeComponent implements OnInit {
 				}));
 				this.pokemonList.push(...mappedData);
 				this.offset += this.limit;
-				console.log(this.pokemonList);
 			},
 			error: (err) => console.error('Erro ao carregar Pokémon', err)
 		});
